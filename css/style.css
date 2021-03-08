@@ -15,9 +15,27 @@ body a {
 }
 
 body a:hover {
-    color: yellow;
+    color: #ffc107;
+    transition: all 1s ease;
 }
 
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+}
 
 ul {
     list-style: none;
@@ -32,7 +50,7 @@ img {
 .btn-dark {
     border-bottom: 4px solid #0c0b0b;
     box-shadow: 0px 2px 3px 0px;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
 }
 
 .btn-dark:hover {
@@ -40,18 +58,24 @@ img {
     color: black;
     border: 2px solid #ff98008a;
     box-shadow: 0px 2px 3px 0px;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
 }
 
 .btn-warning {
     border-bottom: 4px solid #ff98008a;
     box-shadow: 0px 2px 3px 0px;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
 }
 
+/* Start Header*/
 .black {
     background-color: #000000;
-    height: 40px;
+
+}
+
+.black ul {
+    margin: 0;
+    padding: 7px;
 }
 
 .header-top {
@@ -108,6 +132,11 @@ img {
     justify-content: flex-start;
 }
 
+.connection a {
+    color: #000000;
+
+}
+
 .hours ul,
 .connection ul {
     padding-left: 10px;
@@ -115,13 +144,13 @@ img {
 
 .hours,
 .connection {
-    padding: 10px 0px;
+    padding: 20px 0px;
 }
 
-.hours a,
-.connection a {
-    color: #ffca2c;
-    margin-top: 12px;
+.hours i,
+.connection i {
+    color: #ffc107;
+    margin-top: 15px;
 }
 
 .center {
@@ -139,21 +168,29 @@ nav ul {
     box-shadow: 0px 5px 5px 0px;
     align-items: center;
     cursor: pointer;
-    transition: all 0.5s ease;
-    height: 30px;
+    transition: all 1s ease;
+    height: 40px;
     margin-bottom: 0px;
+    padding: 0px;
 }
 
 nav ul li a {
     color: #000000;
-    padding: 5px 10px;
+    padding: 10px 10px;
 }
 
 nav ul li a:hover {
-    background-color: #ffca2c;
+    background-color: #ffc107;
     color: #fff;
+    transition: all 1s ease;
 }
 
+#navbarSupportedContent {
+    justify-content: center;
+}
+
+/*End Header */
+/* Start  section Welcome */
 .welcome {
     width: 100%;
     background-image: url(../img/background.png);
@@ -162,11 +199,11 @@ nav ul li a:hover {
 }
 
 .hello-text {
-    padding: 200px 0;
+    padding: 150px 0;
 }
 
 .fruit {
-    margin: 150px 0;
+    padding: 50px 0;
 
 }
 
@@ -197,9 +234,15 @@ marc {
     background-color: #f0eaea;
 }
 
+/*End section Welcome */
+/* Start section Slider */
 .slider-item button {
     color: #4B5D68;
-    margin: 40px;
+    padding: 0;
+}
+
+span {
+    padding: 0px 15px;
 }
 
 .slider-item .card {
@@ -215,6 +258,7 @@ marc {
     object-fit: cover;
 
 }
+
 .slick-track {
     display: flex;
 }
@@ -222,21 +266,45 @@ marc {
 .slick-list {
     overflow: hidden;
 }
-.top .slick-arrow {
-	position: absolute;
-	/*top: 50%;*/
-	z-index: 5;
+
+.multiple-items {
+    position: relative;
 }
-.slick-arrow .slick-prev {
-left: 0px;
+
+.multiple-items .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    border: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    background-color: white;
+    color: #ffc107;
 }
-.slick-arrow .slick-next {
-  right: 0px;
+
+.multiple-items .slick-arrow:hover {
+    background-color: #e6af09;
+    color: white;
 }
+
+.slick-prev {
+    left: -18px;
+}
+
+.slick-next {
+    right: -18px;
+}
+
+.multiple-items .card-body {
+    padding: 10px;
+}
+
 .card {
     width: auto;
 }
-
 
 .news {
     width: 120px;
@@ -252,20 +320,19 @@ left: 0px;
     right: -35px;
 }
 
-
 .top .fa-shopping-cart {
     background-color: #ffc107;
     color: white;
     padding: 10px;
 }
 
-
-
 .card-body {
     text-align: center;
 
 }
 
+/*End section Slider */
+/*Start section About*/
 .about button,
 .blog button {
     margin: 50px 0;
@@ -317,11 +384,8 @@ left: 0px;
     border-top: 3px solid #ffc107;
 }
 
-.multiple-items .card-body {
-    padding: 50px;
-}
-
-/* Big*/
+/*End section About */
+/* Start section Big*/
 .big .card {
     background-color: #ffc107;
     color: white;
@@ -334,7 +398,7 @@ left: 0px;
 
 .big-img2 {
     bottom: 30px;
-    right: -40px;
+    right: -7px;
     position: absolute;
 }
 
@@ -355,7 +419,9 @@ left: 0px;
     padding-bottom: 70px;
 }
 
-/*subscribe*/
+/*End section Big */
+/* Start section Subscribe*/
+
 #form {
     padding: 40px;
 }
@@ -364,7 +430,8 @@ left: 0px;
     background-color: #ffc107;
 }
 
-
+/*End section Subscribe*/
+/* Start Section Map*/
 .rhombus2 {
     width: 35px;
     height: 35px;
@@ -376,34 +443,40 @@ left: 0px;
 
 #contact i {
     transform: rotate(-45deg);
-    padding: 10px 0px 10px 10px;
+    padding-left: 9px;
+    margin-top: 10px;
 }
-/*Section Map*/
+
 .map #contact {
     padding-left: 40px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
+
 iframe {
     max-width: 100%
 }
+
+/*End section Map*/
 /*Start section Footer Nav*/
 .footernav {
     background-image: url(../img/eda.png);
     color: #fff;
+    padding: 30px 0px;
 }
 
 #quik-links,
 #follow {
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
+    	text-align: center;
 }
 
 #quik-links a,
 #follow a {
     color: #fff;
+    padding: 5px;
 }
 
 #follow a:hover {
@@ -416,14 +489,38 @@ iframe {
 
 .line {
     border-top: 3px solid #ffc107;
+    padding-top: 10px;
+}
+
+.row-flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+.insta-images .col-4 {
+    margin-bottom: 10px;
+
+}
+.insta-images .card{
+	overflow: hidden;
+	height: 100%;
+}
+.insta-images .card a{
+	height: 100%;
+}
+.insta-images .card img {
+	height: 100%;
+	object-fit: cover;
 }
 
 .footernav h3 {
-    padding: 70px 0px 0px 100px;
+    padding: 15px 0px;
+    margin: 0px;
+    text-align: center; 
 }
 
 #follow .fab {
-    padding: 10px;
+      padding: 0px 10px;
+
 }
 
 .footer {
@@ -433,11 +530,12 @@ iframe {
 }
 
 .footer p {
-    padding: 10px 200px 10px 400px;
+	text-align: center;;
+    padding: 10px ;
     margin-bottom: 0px;
 }
 
-
+/*End section  Footer Nav*/
 
 
 
@@ -446,19 +544,38 @@ iframe {
     .multiple-items .card-body {
         padding: 10px;
     }
+
     span {
-    	display: none;
+        display: none;
+    }
+
+    .hello-text {
+        padding: 30px;
+    }
+
+    .fruit,
+    .deals {
+        padding: 0px;
+    }
+
+    #form,
+    .title {
+        padding: 20px;
     }
 
     .big-img2,
     .big-img1 {
         position: initial;
     }
+
     .footer p {
-    	padding: 0px;
-    	margin-bottom: 0px;
-    }
    
+        margin-bottom: 0px;
+    }
+
+    .map #contact {
+        padding-left: 0px;
+    }
 
     nav ul {
         flex-direction: column;
@@ -466,13 +583,26 @@ iframe {
     }
 
     nav ul li a {
-        padding: 15px;
+
         display: block;
 
     }
 
+    ol,
+    ul {
+        padding-left: 0px;
+    }
+
     .wand2::before {
         display: none;
+    }
+
+    .wand::before {
+        display: none;
+    }
+
+    .social-icons a {
+        padding: 5px 25px 5px 0px;
     }
 
     .hours,
@@ -485,9 +615,7 @@ iframe {
     }
 
 
-    .footer p {
-        padding: 0px;
-    }
+
 
     .black {
         height: auto;
@@ -498,9 +626,24 @@ iframe {
     }
 
     .icons a {
-        padding-right: 30px;
+        padding-right: 20px;
 
     }
 
-    .about button {}
+    .line img {
+        width: 100%;
+        height: 70px;
+        object-fit: cover;
+    }
+
+  /*  .footernav h3 {
+        padding: 30px 0px 0px 100px;
+    }*/
+}
+
+/* для планшетов */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar-expand-md .navbar-toggler {
+        display: none;
+    }
 }
